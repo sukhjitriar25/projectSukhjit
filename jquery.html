@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script> 
+$(document).ready(function(){
+    $("#Up").click(function(){
+        $("div").slideUp();
+		
+    });
+	
+	$("#Down").click(function(){
+        $("div").slideDown();
+		
+    });
+	
+	$("#fade").click(function(){
+        $("div").fadeOut(2500);
+    });
+	
+	
+	$("#hide").click(function(){
+        $("p").hide(2000);
+    });
+    $("#show").click(function(){
+        $("p").show(2000).css("color", "blue");
+    });
+});
+
+</script> 
+</head>
+<body style="background-color:snow;">
+<center>
+<button id="Up" style="background-color:pink;height:60px;width:60px;"><b>Up</b></button>
+<button id="Down" style="background-color:pink;height:60px;width:60px;"><b>Down</b></button>
+<button id="hide" style="background-color:pink;height:60px;width:60px;"><b>Hide</b></button>
+<button id="show" style="background-color:pink;height:60px;width:60px;"><b>Show</b></button>
+<button id="fade" style="background-color:pink;height:60px;width:60px;"><b>Fade</b></button>
+
+<p style="font-size:200%;"><b>TRY ME</b></p>
+
+<p style="font-size:160%;">
+<b><u>My name is Sukhjit Kaur. My student ID is C0732172. My hobbies are dancing, shopping, cooking and watching movies.</u></b>
+<div style="background:#800000;height:100px;width:100px;position:absolute;"></div>
+<br/ ><br/ ><br/ ><br/ ><br/ ><br/ ><br/ >
+</center>
+</body>
+</html>
